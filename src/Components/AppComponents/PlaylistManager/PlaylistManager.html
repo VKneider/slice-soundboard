@@ -1,0 +1,67 @@
+<div class="playlist-manager-container">
+  <div class="manager-header">
+    <button class="toggle-manager-btn">▼ Show Playlist Manager</button>
+  </div>
+  
+  <div class="manager-content">
+    <div class="manager-sections">
+      <!-- Create/Edit Form Section -->
+      <section class="create-section">
+        <h3 class="form-title">Create New Playlist</h3>
+        <form class="create-form">
+          <div class="form-group">
+            <label for="playlist-name">Playlist Name *</label>
+            <input type="text" 
+                   class="playlist-name-input" 
+                   id="playlist-name"
+                   placeholder="Enter playlist name..." 
+                   maxlength="50" 
+                   required>
+            <small class="char-count">0/50 characters</small>
+          </div>
+          
+          <div class="form-group">
+            <label for="playlist-description">Description</label>
+            <textarea class="playlist-description-input" 
+                      id="playlist-description"
+                      placeholder="Optional description..."
+                      rows="3"
+                      maxlength="200"></textarea>
+          </div>
+          
+          <div class="form-actions">
+            <button type="button" class="create-btn" disabled>Create Playlist</button>
+            <button type="button" class="cancel-btn">Cancel</button>
+          </div>
+        </form>
+      </section>
+
+      <!-- Import/Export Section -->
+      <section class="import-export-section">
+        <h3 class="section-title">📁 Import & Export</h3>
+        <div class="import-export-actions">
+          <div class="import-group">
+            <button class="import-btn">📥 Import Playlist</button>
+            <input type="file" class="import-file-input" accept=".json" style="display: none;">
+          </div>
+          
+          <div class="export-group">
+            <button class="export-all-btn">📤 Export All</button>
+          </div>
+          
+          <div class="danger-group">
+            <button class="clear-all-btn danger">🗑️ Clear All Data</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Playlists List Section -->
+      <section class="playlists-section">
+        <h3 class="section-title">📋 Manage Playlists</h3>
+        <div class="playlists-list">
+          <!-- Playlists will be rendered here dynamically -->
+        </div>
+      </section>
+    </div>
+  </div>
+</div>

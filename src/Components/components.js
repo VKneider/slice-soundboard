@@ -1,13 +1,9 @@
 const components = {
-  // Nuevos componentes del Soundboard
-  "SoundboardApp": "AppComponents",
-  "PlaylistManager": "AppComponents",
   "AudioPlayer": "AppComponents",
   "AudioUploader": "AppComponents",
+  "PlaylistManager": "AppComponents",
   "PlaylistSelector": "AppComponents",
-  "PlaylistImportExport": "AppComponents",
-  
-  // Componentes visuales existentes
+  "SoundboardApp": "AppComponents",
   "Button": "Visual",
   "Card": "Visual",
   "Checkbox": "Visual",
@@ -27,19 +23,12 @@ const components = {
   "Switch": "Visual",
   "TreeItem": "Visual",
   "TreeView": "Visual",
-  
-  // Servicios existentes
+  "AudioConverter": "Service",
+  "AudioStorageManager": "Service",
   "FetchManager": "Service",
   "IndexedDbManager": "Service",
   "Link": "Service",
   "LocalStorageManager": "Service",
-  "Translator": "Service",
-  
-  // Nuevos servicios del Soundboard
-  "AudioStorageManager": "Service",
   "PlaylistService": "Service",
-  "AudioConverter": "Service",
-  
-}; 
-
-export default components;
+  "Translator": "Service"
+}; export default components;
